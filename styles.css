@@ -1,0 +1,294 @@
+/* Basic styling for the chapters */
+.chapter {
+    display: none; /* Hide all chapters by default */
+}
+
+.chapter.active {
+    display: block; /* Show only the active chapter */
+}
+
+h2 {
+    text-indent: 2em;
+}
+
+h3 {
+    text-indent: 2em;
+}
+
+/* .title1 {
+    color: #fafafa; 
+    position: absolute; 
+    top: 10%;
+    left: 30%;
+    text-align: middle; 
+    vertical-align: middle;
+    font-size: 4em;
+}
+
+.title2 {
+    color: #fafafa; 
+    position: absolute;
+    top: 15%;
+    left: 30%; 
+    text-align: middle; 
+    vertical-align: middle;
+    font-size: 4em;
+} */
+
+body {
+    background-color: rgb(248, 248, 248);
+}
+
+.body_box {
+    background-color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #505050; 
+    text-align:left;
+    font-family:'Roboto',sans-serif;
+    font-size:1em;
+    line-height:1.5em;
+    margin: 60px auto;
+    width: 1200px;
+}
+
+.slogan {
+    text-align: center;
+    overflow: hidden;
+    /* background-image: linear-gradient(rgba(0, 6,170, 0.75), rgba(94, 0, 148, 0.75)); */
+    /* border-radius: 10px 10px 10px 10px;
+    width: 600px;
+    height: 100px; */
+    /* box-shadow: 0 0 10px #505050; */
+    margin: auto;
+    
+}
+
+.slogan p {
+    display: inline-flex;
+    color: black;
+    text-indent: 0em;
+    font-size: 40px;
+    font-family: 'HGZYT_CNKI';
+    background: linear-gradient(to bottom, transparent, rgba(0, 6,170, 0.75));
+}
+
+.grid {
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+/* .grid_4 {
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.grid_3 {
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+} */
+
+.organizor-box {
+    text-align: center;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0, 6,170, 0.75), rgba(94, 0, 148, 0.75));
+    border-radius: 10px 10px 10px 10px;
+    width: 250px;
+}
+
+
+.organizor-box img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border: 1px solid black;
+    /* clip-path: circle(45%); */
+    border-radius: 75%;
+    overflow: clip;
+    border: 1em solid transparent;
+    /* background-image: url("photos/border_img.png"); */
+    border-image: url("photos/border_img.png") 75 round;
+}
+
+.organizor-box h3 {
+    display:inline-flex;
+    color: white;
+    text-indent: 0em;
+    font-size: 28px;
+    background: linear-gradient(to bottom, transparent, transparent, rgba(0, 6,170, 0.75));
+}
+
+p {
+    text-indent: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* Simple navigation styling */
+nav {
+    font-size:1em; 
+    white-space:nowrap; 
+    text-align:center; 
+    vertical-align:middle; 
+    margin: auto;
+}
+
+nav a {
+    padding: 10px 20px;
+    margin-right: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav a.active {
+    background-color: #0056b3;
+}
+
+
+/* Committee List */
+.committee-list {
+    padding-left: 4em;
+    font-size: 1.33em;
+    margin-bottom: 100px;
+}
+
+.committee-list ul li {
+    margin-bottom: 10px;
+}
+
+.center-table {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.award-list {
+    width: 1100px;
+    height: 100px;
+    color: #000000;
+    font-size: large;
+}
+
+.award-list th, td {
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    /* width: auto; */
+}
+
+.award-list thead th {
+    background-color: #4294fe;
+    color:  #ffffff;
+}
+
+.award-list th {
+    background-color: #6baafd;
+}
+
+.award-list tr:nth-child(even) {
+    background-color: #99c5ff;
+}
+
+.award-list tr:nth-child(odd) {
+    background-color: #6baafd;
+}
+
+.news-list {
+    text-align: center;
+}
+
+.news-list li{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px 5px 0;
+}
+
+.news-title {
+    text-align: center;
+    font-size: 3em;
+}
+
+.top-award {
+    width: 1100px;
+    height: 100px;
+    color: #000000;
+    font-size: large;
+}
+
+.top-award th, td {
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    /* width: auto; */
+}
+
+.top-award thead th {
+    background-color: #ffc000;
+    color:  #ffffff;
+}
+
+.top-award th {
+    background-color: #ffd454;
+}
+
+.top-award tr:nth-child(even) {
+    background-color: #ffeeba;
+}
+
+.top-award tr:nth-child(odd) {
+    background-color: #ffd454;
+}
+
+.second-award {
+    width: 1100px;
+    height: 100px;
+    color: #000000;
+    font-size: large;
+}
+
+.second-award th, td {
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    /* width: auto; */
+}
+
+.second-award thead th {
+    background-color: #88e64e;
+    color:  #ffffff;
+}
+
+.second-award th {
+    background-color: #a6e77e;
+}
+
+.second-award tr:nth-child(even) {
+    background-color: #e2efda;
+}
+
+.second-award tr:nth-child(odd) {
+    background-color: #a6e77e;
+}
